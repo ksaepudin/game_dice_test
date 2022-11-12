@@ -38,7 +38,7 @@ Tabel :
 |nama_pegawai |varchar(50)||
 
 
-## Screenshots
+## ERD
 
 ![App Screenshot](erd.png)
 
