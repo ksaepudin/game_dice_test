@@ -38,6 +38,13 @@ Tabel :
 |nama_pegawai |varchar(50)||
 
 
+## Screenshots
+
+![App Screenshot](erd.png)
+
+
+
+
 
 
 
