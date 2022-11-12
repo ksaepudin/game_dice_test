@@ -55,11 +55,11 @@ Tabel :
 
 ## Features
 - Database MySql = 
- -- Bersifat Open Source
- -- Manajemen User Lebih Baik
- -- Tingkat Keamanan lebih tinggi
- -- Mysql memiliki tipe kolom seperti signed/usigned integer, float, double, char, text, date, timestamp
- -- Sangat cepat dalam membaca data
+ - Bersifat Open Source
+ - Manajemen User Lebih Baik
+ - Tingkat Keamanan lebih tinggi
+ - Mysql memiliki tipe kolom seperti signed/usigned integer, float, double, char, text, date, timestamp
+ - Sangat cepat dalam membaca data
 <!-- - Backedn = GO
 karana untuk build dan hasil buildnya lebih cepat dan hasil build menjadi file exetension
 - Router = GIN 
