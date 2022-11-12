@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"math/rand"
-	"strings"
 	"sync"
 	"time"
 )
@@ -28,7 +27,7 @@ func rollDice() int {
 }
 
 func main() {
-	setGame(9, 10)
+	setGame(4, 10)
 }
 
 func toCharStr(i int) string {
@@ -61,8 +60,8 @@ func setGame(pemain, dadu int) {
 				fmt.Print("_ (Berhenti bermain karena tidak memiliki dadu)")
 			}
 			fmt.Println("")
-
 		}
+
 		resEvalu := evaluasi(player, rounde)
 		fmt.Println("Setelah evaluasi rounde : ", rounde)
 		for _, v := range resEvalu {
@@ -78,7 +77,7 @@ func setGame(pemain, dadu int) {
 		}
 		player = resEvalu
 		if findWinner(resEvalu) {
-
+			player = nil
 			fmt.Println("================================================")
 			break
 		}
@@ -172,19 +171,24 @@ func evaluasi(in []listPlayer, score int) []listPlayer {
 
 func findWinner(in []listPlayer) bool {
 	var (
-		// win    bool
 		player []string
+		score  int
+		pemain string
 	)
 
 	for _, v := range in {
 		if len(v.Dice) != 0 {
 			player = append(player, v.Player)
 		}
+
+		if score < v.Score {
+			score = v.Score
+			pemain = v.Player
+		}
 	}
 	if len(player) == 1 {
 		fmt.Println("================================================")
-		fmt.Println("Winner = Player #", strings.TrimSpace(player[0]))
-		// fmt.Println()
+		fmt.Println("Winner = Player #", pemain)
 		return true
 	}
 	return false
