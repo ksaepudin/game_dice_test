@@ -54,8 +54,13 @@ Tabel :
 
 
 ## Features
-
-- Backedn = GO
+- Database MySql = 
+ -- Bersifat Open Source
+ -- Manajemen User Lebih Baik
+ -- Tingkat Keamanan lebih tinggi
+ -- Mysql memiliki tipe kolom seperti signed/usigned integer, float, double, char, text, date, timestamp
+ -- Sangat cepat dalam membaca data
+<!-- - Backedn = GO
 karana untuk build dan hasil buildnya lebih cepat dan hasil build menjadi file exetension
 - Router = GIN 
 (Gin’s Performance
@@ -63,5 +68,5 @@ Baiknya performa gin sangat terpengaruh oleh route grouping dan small memory.
 
 Kemampuan gin untuk route grouping memungkinkan route pada Gin nest tanpa batas dan tanpa mempengaruhi performa.
 
-Sedangkan small memory membuat semakin sedikitnya memori yang dikonsumsi server yang menjadikannya lebih cepat. )
+Sedangkan small memory membuat semakin sedikitnya memori yang dikonsumsi server yang menjadikannya lebih cepat. ) -->
 
