@@ -8,6 +8,7 @@ Aplikasi ini diperuntukan untuk mencatat semua jenis transaksi pemesanan makan d
 Database : db_rumah_makan
 Tabel :
 - tbl_menu
+
 | Fields | type |primary|
 | ------ | ------ | ------ |
 | id_menu | int auto_increment| primary key|
@@ -18,6 +19,7 @@ Tabel :
 |update_date | datetime||
 
 - tbl_penjualan
+
 | Fields | type |primary|
 | ------ | ------ | ------ |
 |id_transaksi| int auto_increment|  primary key|
@@ -29,6 +31,7 @@ Tabel :
 |price| float/decimal ||
 
 - tbl_pegawai
+
 | Fields | type |primary|
 | ------ | ------ | ------ |
 |id_pegawai | int auto_increment| primary key|
